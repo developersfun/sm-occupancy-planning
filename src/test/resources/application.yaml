@@ -1,0 +1,14 @@
+spring:
+  application:
+  name: occupancy-planning
+  ai:
+    azure:
+      openai:
+        api-key: udfhvkjdfbv
+        endpoint: https://tdf-openai.openai.azure.com/
+        chat:
+          options:
+            deployment-name: gpt-4
+vergesense:
+  api-key: VSKEY
+  api-url: https://api.vergesense.com/v1

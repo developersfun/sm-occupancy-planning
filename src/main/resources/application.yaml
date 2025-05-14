@@ -1,0 +1,30 @@
+spring:
+  application:
+  name: occupancy-planning
+  ai:
+    azure:
+      openai:
+        api-key: ${AZURE_OPENAI_API_KEY}
+        endpoint: https://tdf-openai.openai.azure.com/
+        chat:
+          options:
+            deployment-name: gpt-4
+vergesense:
+  api-key: ${VERGESENSE_API_KEY}
+  api-url: https://api.vergesense.com/v1
+
+anthropic:
+  model: "anthropic.claude-v1"
+  api-key: "${ANTHROPIC_API_KEY}"
+  api-version: "2023-06-01"
+  temperature: 0.5
+  max-tokens: 1000
+  top-p: 1.0
+  top-k: 250
+  system-message: "You are a helpful assistant."
+  stop-sequences:
+    - "\n\nHuman:"
+    - "\n\nAssistant:"
+    - "Human:"
+    - "Assistant:"
+  url: "https://api.anthropic.com/v1/complete"
